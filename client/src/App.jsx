@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { api, getToken, setToken } from './api';
 import AuthForm from './AuthForm';
+import Readings from './Readings';
 
 export default function App() {
   const [user, setUser] = useState(null);
@@ -33,7 +34,7 @@ export default function App() {
           {user.name} <button className="link" onClick={logout}>Log out</button>
         </span>
       </header>
-      <p className="muted">Readings will appear here.</p>
+      <Readings />
     </div>
   );
 }
