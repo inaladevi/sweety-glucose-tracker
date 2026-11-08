@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background: #f4f6fb;
+    color: #1f2937;
+}
+
+.center {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.page {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0 1rem;
+}
+
+.card {
+    max-width: 360px;
+    margin: 3rem auto;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.card h1 {
+    margin: 0;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-size: 0.9rem;
+}
+
+input,
+select {
+    padding: 0.5rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 0.6rem 1rem;
+    border: 0;
+    border-radius: 6px;
+    background: #2563eb;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+button.link {
+    background: none;
+    color: #2563eb;
+    padding: 0;
+    font-size: inherit;
+    text-decoration: underline;
+}
+
+.muted {
+    color: #64748b;
+    margin: 0;
+}
+
+.error {
+    color: #b91c1c;
+    background: #fee2e2;
+    padding: 0.5rem;
+    border-radius: 6px;
+    margin: 0;
+}
