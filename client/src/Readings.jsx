@@ -55,9 +55,9 @@ export default function Readings() {
         await api('/readings', { method: 'POST', body });
       }
       resetForm();
-      await load(); // re-fetch so the screen always matches the database
+      await load();
     } catch (err) {
-      setError(err.message); // shows the server's own message
+      setError(err.message);
     } finally {
       setSaving(false);
     }
