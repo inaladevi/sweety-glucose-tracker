@@ -50,7 +50,7 @@ cd server
 npm run seed
 ```
 
-This creates a demo user with 45 days of readings. Log in with `demo@sweety.app` / `demo12345`. Running it again is safe (it updates, it doesn't duplicate).
+This creates a demo user with 45 days of readings. Log in with `demo@sweety.app` / `demo12345`. Running it again is safe: it resets the demo user’s data.
 
 ### 5. Tests
 
